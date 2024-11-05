@@ -33,10 +33,12 @@ This project involves studying a dataset using various data preprocessing, norma
 import pandas as pd
 ```
 
-### Read data file
+**Read data file**
 ```python
 DATA = pd.read_csv('/content/drive/MyDrive/HR_SBA_Software.csv')
 ```
+**Satisfaction level must be between 0 and 1**
+We will proceed with a check to ensure all our data is within the [0, 1] range
 
-### Satisfaction level must be between 0 and 1
-### We will proceed with a check to ensure all our data is within the [0, 1] range
+
+<img src="img/data.png" alt="Project Logo" width="2000" height="444"/>
