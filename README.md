@@ -37,8 +37,33 @@ import pandas as pd
 ```python
 DATA = pd.read_csv('/content/drive/MyDrive/HR_SBA_Software.csv')
 ```
+<img src="img/data.png" alt="Project Logo" width="1500" height="400"/>
+
+# Data preprocessing
+
 **Satisfaction level must be between 0 and 1** <br/>
 We will proceed with a check to ensure all our data is within the [0, 1] range
+```python
+print ("Valeur minimale",min(DATA.satisfaction_level))
+print ("Valeur maximale",max(DATA.satisfaction_level))
+```
+
+**The values for the variable "last_evaluation" must be between 0 and 1**
+We will proceed with a check to ensure all our data is within the [0, 1] range
+
+```python
+print ("Valeur minimale",min(DATA.last_evaluation))
+print ("Valeur maximale",max(DATA.last_evaluation))
+```
+
+**We must check that there are no negative values for the variable "number_project"**
+```python
+if (min(DATA.number_project>=0)):
+  print ("Pas de valeurs négative! La première condition est vérifiée")
+else:
+  print ("Il y'a des valeurs négatives! On doit corriger quelques observations")
+```
 
 
-<img src="img/data.png" alt="Project Logo" width="1500" height="400"/>
+
+
