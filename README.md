@@ -169,10 +169,9 @@ DATA['salary'] = DATA['salary'].replace(['low', 'medium', 'high'], [0.1, 0.2, 0.
 **Verify the transformations**
 ```python
 print(DATA['salary'].unique())
-
+```
 <img src="img/preprocessed_data.png" alt="Project Logo" width="1500" height="400"/>
 
-```
 on remarque ici que la corrélation entre nos données n'est pas très forte
 pas de corrélation forte ni positive (tend vers 1) ni négative (tends vers -1)
 ```python
@@ -184,4 +183,4 @@ seaborn.heatmap(matrice,annot=True)
 plt.show()
 ```
 
-<img src="img/correlations" alt="Project Logo" width="1500" height="400"/>
+<img src="img/correlations" alt="Project Logo" width="300" height="300"/>
