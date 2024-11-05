@@ -143,8 +143,8 @@ DATA.drop_duplicates(keep='first', inplace=True)
 We will replace qualitative data with quantitative data<br\> 
 sales = 1  -- accounting = 2 -- hr = 3 -- technical = 4 -- support = 5 management = 6 -- IT = 7 -- product_mng = 8 -- marketing = 9 -- RandD = 10<br\> 
 
-# There are two methods to perform this task:
-# 1. Replacing a single value, for example:
+**There are two methods to perform this task:**
+**1. Replacing a single value, for example:**
 ```python
 DATA['Departement'] = DATA['Departement'].replace(['sales'], 0.1)
 DATA['Departement'] = DATA['Departement'].replace(['accounting'], 0.2)
@@ -152,13 +152,21 @@ DATA['Departement'] = DATA['Departement'].replace(['hr'], 0.3)
 DATA['Departement'] = DATA['Departement'].replace(['technical'], 0.4)
 ```
 
-# 2. Replacing multiple values in parallel
+**2. Replacing multiple values in parallel**
 ```
 DATA['Departement'] = DATA['Departement'].replace(['support','management','IT'], [0.5,0.6,0.7])
 DATA['Departement'] = DATA['Departement'].replace(['product_mng','marketing','RandD'], [0.8,0.9,1])
 ```
 
-# Now let's verify that all departments have been modified
+**Now let's verify that all departments have been modified**
 ```
 DATA['Departement'].unique()
+```
+**Transform qualitative data into quantitative data**
+```python
+DATA['salary'] = DATA['salary'].replace(['low', 'medium', 'high'], [0.1, 0.2, 0.3])
+```
+**Verify the transformations**
+```python
+print(DATA['salary'].unique())
 ```
