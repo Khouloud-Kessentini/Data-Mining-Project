@@ -84,3 +84,10 @@ print(min(DATA.average_montly_hours))
 ```python
 print(max(DATA.average_montly_hours))
 ```
+**We will eliminate observations greater than 250 hours**<br/>
+**An observation with a number of hours greater than 250 is considered to be an excessively high value**
+
+```python
+indexNames = DATA[ DATA['average_montly_hours']>250].index
+DATA.drop(indexNames, inplace=True)
+```
