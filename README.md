@@ -93,3 +93,8 @@ DATA.drop(indexNames, inplace=True)
 ```
 <img src="img/preprocessing1.png" alt="Project Logo" width="1500" height="400"/>
 
+**The minimum and maximum values are 2 and 10 years (reasonable values)**
+```python
+print ("temps minimal à l'entreprise", min(DATA.time_spend_company))
+print ("temps maximal à l'entreprise", max(DATA.time_spend_company ))
+```
