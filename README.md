@@ -27,4 +27,16 @@ This project involves studying a dataset using various data preprocessing, norma
 
 7. **K-Means Algorithm**  
    Applying K-Means clustering to organize data into specific groups based on similarity.
+
    
+```python
+import pandas as pd
+```
+
+### Read data file
+```python
+DATA = pd.read_csv('/content/drive/MyDrive/HR_SBA_Software.csv')
+```
+
+### Satisfaction level must be between 0 and 1
+### We will proceed with a check to ensure all our data is within the [0, 1] range
