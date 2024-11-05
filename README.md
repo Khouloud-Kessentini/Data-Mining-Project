@@ -184,3 +184,17 @@ plt.show()
 ```
 
 <img src="img/correlation.png" alt="Project Logo" width="300" height="300"/>
+
+**Import necessary libraries**
+```python
+from sklearn.decomposition import PCA
+```
+**Create an instance of the PCA class, here named "ACP"**
+```python
+ACP = PCA()
+```
+**Apply PCA transformation on dataset Z**
+```python
+Z_transformed = ACP.fit_transform(Z)
+```
+Z_transformed now contains the transformed data in terms of principal components
