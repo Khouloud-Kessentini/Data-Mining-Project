@@ -107,3 +107,19 @@ occurence_0 = DATA.Work_accident[DATA['Work_accident']==0].count()
 occurence_1 = DATA.Work_accident[DATA['Work_accident']==1].count()
 len(DATA) == occurence_0 + occurence_1
 ```
+
+**This value is binary, either 0 or 1<br/>
+We will check that there are no values other than 0 and 1<br/>
+We calculate the occurrence of 0 and the occurrence of 1 and compare their sums against the total number of observations**
+```python
+occurence_0 = DATA.left[DATA['left']==0].count()
+occurence_1 = DATA.left[DATA['left']==1].count()
+len(DATA) == occurence_0 + occurence_1
+```
+
+**The number of promotions must not be negative<br/>
+It should also be a reasonable value (for example: 10 promotions in 5 years is not reasonable)**
+```python
+print ("Nombre minimal de promotions", min(DATA.promotion_last_5years))
+print ("Nombre maximal de promotions", max(DATA.promotion_last_5years))
+```
