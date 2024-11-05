@@ -183,4 +183,4 @@ seaborn.heatmap(matrice,annot=True)
 plt.show()
 ```
 
-<img src="img/correlation" alt="Project Logo" width="300" height="300"/>
+<img src="img/correlation.png" alt="Project Logo" width="300" height="300"/>
