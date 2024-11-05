@@ -79,4 +79,8 @@ print("Nombre maximal de projets: ", min(DATA.number_project))
 ```python
 print(min(DATA.average_montly_hours))
 ```
+**The reasonable maximum number per month is 275 (which is 10 hours maximum per day and 6 days/week)**
 
+```python
+print(max(DATA.average_montly_hours))
+```
