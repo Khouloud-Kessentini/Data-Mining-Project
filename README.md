@@ -37,8 +37,8 @@ import pandas as pd
 ```python
 DATA = pd.read_csv('/content/drive/MyDrive/HR_SBA_Software.csv')
 ```
-**Satisfaction level must be between 0 and 1**
+**Satisfaction level must be between 0 and 1** <br/>
 We will proceed with a check to ensure all our data is within the [0, 1] range
 
 
-<img src="img/data.png" alt="Project Logo" width="2000" height="444"/>
+<img src="img/data.png" alt="Project Logo" width="1500" height="400"/>
