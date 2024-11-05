@@ -91,3 +91,5 @@ print(max(DATA.average_montly_hours))
 indexNames = DATA[ DATA['average_montly_hours']>250].index
 DATA.drop(indexNames, inplace=True)
 ```
+<img src="img/preprocessing1.png" alt="Project Logo" width="1500" height="400"/>
+
