@@ -130,3 +130,12 @@ We will change the column name from "sales" to "Departement"**
 DATA.columns=['satisfaction_level','last_evaluation','number_project','average_montly_hours','time_spend_company',
               'Work_accident','left','promotion_last_5years','Departement', 'salary']
 ```
+**We will visualize the existing departments and check for any input errors**
+```python
+DATA['Departement'].unique()
+```
+
+**Elimination of duplicates**
+```python
+DATA.drop_duplicates(keep='first', inplace=True)
+```
