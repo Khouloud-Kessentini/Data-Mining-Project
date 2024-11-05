@@ -98,3 +98,12 @@ DATA.drop(indexNames, inplace=True)
 print ("temps minimal à l'entreprise", min(DATA.time_spend_company))
 print ("temps maximal à l'entreprise", max(DATA.time_spend_company ))
 ```
+**This value is binary, either 0 or 1<br/>
+We will check that there are no other values (e.g., 2, 0.5, -1, etc.)<br/>
+We calculate the occurrence of 0 and the occurrence of 1<br/>
+and compare their sums against the total number of observations**
+```python
+occurence_0 = DATA.Work_accident[DATA['Work_accident']==0].count()
+occurence_1 = DATA.Work_accident[DATA['Work_accident']==1].count()
+len(DATA) == occurence_0 + occurence_1
+```
