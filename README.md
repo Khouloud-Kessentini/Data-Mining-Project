@@ -48,7 +48,7 @@ print ("Valeur minimale",min(DATA.satisfaction_level))
 print ("Valeur maximale",max(DATA.satisfaction_level))
 ```
 
-**The values for the variable "last_evaluation" must be between 0 and 1**
+**The values for the variable "last_evaluation" must be between 0 and 1**<br/>
 We will proceed with a check to ensure all our data is within the [0, 1] range
 
 ```python
@@ -64,6 +64,14 @@ else:
   print ("Il y'a des valeurs négatives! On doit corriger quelques observations")
 ```
 
+**We must check that there are no excessive values for the number of projects**
+```python
+print ("Nombre maximal de projets: ", max(DATA.number_project))
+```
 
+**On doit vérifier qu'il n'y'a pas de valeurs négatives pour le nombre de projets**
+```python
+print ("Nombre maximal de projets: ", min(DATA.number_project))
+```
 
 
