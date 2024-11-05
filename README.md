@@ -123,3 +123,10 @@ It should also be a reasonable value (for example: 10 promotions in 5 years is n
 print ("Nombre minimal de promotions", min(DATA.promotion_last_5years))
 print ("Nombre maximal de promotions", max(DATA.promotion_last_5years))
 ```
+**It seems there is a mistake in the column name<br/>
+It should be "Departement" instead of "sales"<br/>
+We will change the column name from "sales" to "Departement"**
+```python
+DATA.columns=['satisfaction_level','last_evaluation','number_project','average_montly_hours','time_spend_company',
+              'Work_accident','left','promotion_last_5years','Departement', 'salary']
+```
