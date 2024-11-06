@@ -273,3 +273,14 @@ Z = pd.DataFrame(Z)  # Convert the result to a DataFrame
 Z  # Display the transformed data
 ```
 <img src="img/kaiser" alt="Project Logo" width="450" height="450"/>
+
+```python
+from sklearn.cluster import KMeans
+```
+**Create an instance of KMeans with 4 clusters (k=4) for the dataset Z**
+```python
+kmeans = KMeans(n_clusters=4).fit(Z)  
+print(kmeans)  # Print the KMeans object, which includes details of the clustering
+```
+
+
