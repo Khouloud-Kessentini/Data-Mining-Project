@@ -199,7 +199,15 @@ Z_transformed = ACP.fit_transform(Z)
 ```
 Z_transformed now contains the transformed data in terms of principal components
 
-** Now we calculate the variance of each variable, i.e., the contribution of each variable to the total amount of information.**
+**Now we calculate the variance of each variable, i.e., the contribution of each variable to the total amount of information.**
 ```python
 ACP.explained_variance_
 ```
+**Now we calculate the variance in percentage for each variable**
+```python
+def explained_variance_en_pourcentage(ACP):
+  for i in range (10):
+    print(ACP.explained_variance_ratio_[i]*100)
+explained_variance_en_pourcentage(ACP)
+```
+<img src="img/variance" alt="Project Logo" width="300" height="300"/>
