@@ -211,3 +211,32 @@ def explained_variance_en_pourcentage(ACP):
 explained_variance_en_pourcentage(ACP)
 ```
 <img src="img/variance" alt="Project Logo" width="300" height="300"/>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+**Assuming ACP.explained_variance_ contains the explained variance for each principal component**
+```python
+val_proportion = ACP.explained_variance_
+```
+**Set the number of principal components**
+```python
+num_components = ACP.n_components_
+```
+**Plotting the explained variance as a line plot and bar plot**
+```python
+plt.plot(np.arange(1, num_components + 1), val_proportion, color="#FF0000", marker='o', label="Explained Variance (Line)")
+plt.bar(np.arange(1, num_components + 1), val_proportion, width=0.6, color="#000000", alpha=0.7, label="Explained Variance (Bar)")
+```
+
+**Annotation of the figure**
+```python
+plt.title("Scree Plot of Eigenvalues")
+plt.ylabel("Eigenvalue")
+plt.xlabel("Principal Component Order")
+plt.legend()
+plt.show()
+```
+
