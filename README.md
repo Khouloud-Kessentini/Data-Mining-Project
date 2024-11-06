@@ -250,3 +250,17 @@ plt.ylabel("Cumsum Explained Variance Ratio")
 plt.xlabel("Factor Number")
 plt.show()
 ```
+
+The data might not be strongly correlated, but some deductions can still be made:
+
+* Promotion in the last 5 years: It doesn't show a strong correlation with other variables. The highest correlation is with the salary variable at 0.08. This suggests that promotions are likely given arbitrarily without a well-defined formula.
+
+* Number of projects and left: The covariance between the number of projects and the "left" variable is -0.25, indicating that as the number of projects increases, the likelihood of leaving the company decreases, and vice versa. However, since the correlation is just -0.25 and not close to -1, the relationship between these two variables is not very strong.
+
+* Department and promotion in the last 5 years: The covariance between the department and promotion in the last 5 years is 0.028, indicating that the department is not a major factor in determining promotions. Additionally, the correlation between the department and other variables is very weak, suggesting that the department has little influence on the total amount of information.
+
+* Number of projects and satisfaction level: The covariance between the number of projects and satisfaction level is 0.24. Although this is a weak correlation, it suggests that the more projects a person handles, the higher their satisfaction level (positive correlation).
+
+* Satisfaction level and left: The covariance between satisfaction level and the "left" variable is -0.24. This negative correlation suggests that as the satisfaction level increases, the likelihood of leaving the company decreases (negative correlation).
+
+    Salary and work accident: The correlation between salary and work accidents is 0.0004. This indicates that there is no significant correlation between these two variables, meaning there is no relationship between salary and work accidents.
