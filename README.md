@@ -272,7 +272,7 @@ Z = ACP.fit_transform(Z)  # Perform PCA transformation to reduce dimensions
 Z = pd.DataFrame(Z)  # Convert the result to a DataFrame
 Z  # Display the transformed data
 ```
-<img src="img/kaiser" alt="Project Logo" width="450" height="450"/>
+<img src="img/kaiser.png" alt="Project Logo" width="450" height="450"/>
 
 ```python
 from sklearn.cluster import KMeans
