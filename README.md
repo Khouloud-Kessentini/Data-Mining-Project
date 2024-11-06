@@ -263,4 +263,12 @@ The data might not be strongly correlated, but some deductions can still be made
 
 * Satisfaction level and left: The covariance between satisfaction level and the "left" variable is -0.24. This negative correlation suggests that as the satisfaction level increases, the likelihood of leaving the company decreases (negative correlation).
 
-    Salary and work accident: The correlation between salary and work accidents is 0.0004. This indicates that there is no significant correlation between these two variables, meaning there is no relationship between salary and work accidents.
+* Salary and work accident: The correlation between salary and work accidents is 0.0004. This indicates that there is no significant correlation between these two variables, meaning there is no relationship between salary and work accidents.
+
+**Selecting the top 4 variables that give the most information (based on the Kaiser criterion)**
+```python
+ACP = PCA(n_components=4) 
+Z = ACP.fit_transform(Z)  # Perform PCA transformation to reduce dimensions
+Z = pd.DataFrame(Z)  # Convert the result to a DataFrame
+Z  # Display the transformed data
+```
