@@ -239,5 +239,5 @@ plt.xlabel("Principal Component Order")
 plt.legend()
 plt.show()
 ```
-<img src="img/elbow" alt="Project Logo" width="450" height="450"/>
+<img src="img/elbow.png" alt="Project Logo" width="450" height="450"/>
 
