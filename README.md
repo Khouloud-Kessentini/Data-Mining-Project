@@ -283,4 +283,12 @@ kmeans = KMeans(n_clusters=4).fit(Z)
 print(kmeans)  # Print the KMeans object, which includes details of the clustering
 ```
 
+**Display the coordinates of each centroid and the associated inertia**
+```python
+centroids = kmeans.cluster_centers_  # Extract the coordinates of the centroids
+print(centroids)  # Print the centroids' coordinates
+```
+
+**Note: Here, we have the coordinates of the centroids on 4 axes.**
+**If we hadn't chosen just 4 principal components through PCA, we would need to work on 10 axes, which would be computationally expensive (high time complexity).**
 
