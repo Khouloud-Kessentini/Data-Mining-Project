@@ -241,3 +241,12 @@ plt.show()
 ```
 <img src="img/elbow.png" alt="Project Logo" width="450" height="450"/>
 
+**Visualization of the cumulative explained variance curve**
+**Since the variance of the variables is close, the cumulative explained variance curve is almost linear**
+```python
+plt.plot(np.arange(0, 10), np.cumsum(ACP.explained_variance_ratio_))
+plt.title("Explained Variance")
+plt.ylabel("Cumsum Explained Variance Ratio")
+plt.xlabel("Factor Number")
+plt.show()
+```
