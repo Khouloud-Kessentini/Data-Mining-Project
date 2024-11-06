@@ -198,3 +198,8 @@ ACP = PCA()
 Z_transformed = ACP.fit_transform(Z)
 ```
 Z_transformed now contains the transformed data in terms of principal components
+
+** Now we calculate the variance of each variable, i.e., the contribution of each variable to the total amount of information.**
+```python
+ACP.explained_variance_
+```
